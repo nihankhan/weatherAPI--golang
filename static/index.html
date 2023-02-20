@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Weather App </title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <main>
+        <h1 div-align="center">Welcome to My Weather App run on Golang</h1>  
+    </main>
+    <img src="weather-icon.jpg" alt="Weather" width="500" height="600">
+
+    <ol style="list-style-type:circle">
+        {{ if . }}
+        <li>
+            {{.Name}}
+        </li>
+        <li>
+            {{.Base}}
+        </li>
+        <li>
+            {{.Main.Temp}}
+        </li>
+        <li>
+            {{.Sys.Country}}
+        </li>
+
+        {{end}}
+    </ol>
+	<!-- <script src="index.js"></script> -->
+  </body>
+</html>
